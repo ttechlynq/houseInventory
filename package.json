@@ -2,18 +2,23 @@
   "name": "houses",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/ttechlynq/houseInventory.git",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "next build"
   },
   "dependencies": {
     "@types/node": "18.15.11",
     "@types/react": "18.0.32",
     "@types/react-dom": "18.0.11",
+    "cors": "^2.8.5",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "gh-pages": "^5.0.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
